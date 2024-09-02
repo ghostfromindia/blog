@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    font-size: 3rem; /* 48px */
+    font-weight: 700; /* Bold */
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700; /* Bold */
+}
+
+h3 {
+    font-size: 2rem; /* 32px */
+    font-weight: 600; /* Semi-bold */
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 1.75rem; /* 28px */
+    font-weight: 600; /* Semi-bold */
+}
+
+h5 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 500; /* Medium */
+}
+
+h6 {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 500; /* Medium */
+}
+p{
+    font-size: 1.2rem;
+}
+.page-title{
+    font-size: 70px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20vh;
+    font-weight: lighter;
+}
+.category-container{
+    display: flex;
+}
+.category-item {
+    height: auto;
+    flex: 1 1 300px; /* Allows items to grow and shrink with a base size of 200px */
+    margin: 10px; /* Adds spacing around each item */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    border: 1px solid #ddd; /* Optional: Adds a border for better visibility */
+    text-align: center; /* Centers text inside each item */
+    background-color: #f9f9f9; /* Optional: Background color */
+    border-radius: 10px;
+    line-height: 18px
+}
+
+.category-item img{
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+}
+
+.slick-dots li button:before {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.offers img{
+    border-radius: 10px;
+}
+
+.product h5{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.product p{
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 0px;
+}
+.product .price-tag{
+font-weight: lighter;
+}
+.product .price-tag .off{
+    color: green;
+    font-weight: lighter;
+}
+
+.product .price-tag .price{
+    font-weight: bold;
+    font-size: 25px;
+}
+.quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    background-color: #007bff; /* Button color */
+    color: white;              /* Text color */
+    border: none;              /* No border */
+    border-radius: 4px;       /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    font-size: 16px;           /* Font size */
+}
+
+.plus{
+    background: darkslateblue;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.minus{
+    background: #483d8bd1;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.quantity-btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.quantity-input {
+    background: #483d8b1c;
+    width: 50px;               /* Width of the input box */
+    text-align: center;        /* Center the text */
+    border: 1px solid rgba(204, 204, 204, 0.15);    /* Border */
+    border-radius: 0px;       /* Rounded corners */
+    font-size: 16px;           /* Font size */
+}
+
+.add-to-cart-btn {
+    background-image: linear-gradient(to right, #009688 0%, #009688 51%, #048434 100%);
+    color: white;              /* Text color */
+    border: none;              /* No border */
+    border-radius: 4px;       /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    font-size: 16px;           /* Font size */
+    margin-left: auto;        /* Space from the quantity controls */
+}
+
+.add-to-cart-btn img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.add-to-cart-btn:hover {
+    background-position: right center; /* change the direction of the change here */
+}  /* Font size */
+
+.sticky-sidebar {
+    position: sticky;
+    top: 10px; /* Adjust this value if you want some offset from the top */
+    z-index: 10; /* Ensures it stays above other content */
+}
+
+.blog-cover-image{
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    object-fit: contain;
+    background: black;
+}
+
+.author-bio-cover {
+    background-image: url('https://i.imgur.com/5yeBVeM.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 200px;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.author-bio-cover img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    display: block;
+}
+.author-bio h4 {
+    padding: 10px 10px 0 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.author-bio small {
+    padding-left: 10px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.author-bio{
+    background: #fdfbfb;
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+}
+.author-description {
+    font-size: 13px;
+    padding: 5px 0 0 10px !important;
+    margin-bottom: 0;
+}
+.social-media-link{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 5px;
+}
+.social-media-link:first-child{
+    margin-left: 0;
+}
+.social-media-icons{
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    display: block;
+    border-radius: 5px;
+}
+
+.article-listing-style-1 .thumbnail img{
+    height: 60px;
+    width: 60px !important;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 10px !important;
+    display: block;
+}
+.article-listing-style-1 .title{
+    line-height: 18px;
+    margin: auto;
+    text-wrap: balance;
+}
+
+#toc a{
+    color: black;
+    text-decoration: none;
+}
+
+#toc .active{
+    color: black;
+    text-decoration: underline;
+}
+
+.author-info{
+    position: absolute;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+.title a{
+    text-decoration: none;
+    color: black;
+}
+
+.blog-thumbnail{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 900;
+}
+.blog-thumbnail-image{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.blog-thumbnail .title{
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 10px; /* Padding around the content */
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin: 0;
+}
+.category{
+    margin: auto;
+    color: grey;
+    font-weight: 400;
+}.category-area{
+    text-align: center;
+}
+
+.blog-details{
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.blog-details span{
+    font-size: 12px;
+    margin: 10px 0px;
+
+}
+.blog-info .time{
+    margin: 20px 0px;
+    color: grey;
+    font-size: 14px;
+}
+.blog-info .author{
+    margin: 20px 0px;
+    color: grey;
+    font-size: 14px;
+    text-align: right;
+}
+.blog-info .author-area{
+    text-align: right;
+}
